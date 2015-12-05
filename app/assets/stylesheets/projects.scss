@@ -38,3 +38,29 @@
     margin-bottom: 9px;
   }
 }
+
+.show-project {
+  .fa-check-circle-o {
+    margin-left: 36vw;
+    color: green;
+  }
+
+  .project-data-row {
+    margin-top: 20px;
+  }
+
+  .project-image {
+    border:1px solid #ddd;
+    padding:20px;
+  }
+
+  .project-right-box {
+    border:1px solid #ddd;
+    padding:20px;
+  }
+
+  .donation-needed {
+    color: #f0ad4e;
+    font-weight: bold;
+  }
+}
