@@ -24,6 +24,7 @@ class ProjectsController < ApplicationController
   end
 
   def show
+    @donation = current_user.donations.new
   end
 
   def destroy
