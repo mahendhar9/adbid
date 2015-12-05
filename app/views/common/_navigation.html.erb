@@ -13,6 +13,8 @@
       <ul class="nav navbar-nav">
         <li><%= link_to "Home", root_path %></li>
         <% if current_user %>
+        <li><%= link_to "Projects", projects_path %>
+        <li><%= link_to "Add Project", new_project_path %>
         <li><%= link_to "Logout", destroy_user_session_path, method: :delete %>
           <% else %>
           <li><%= link_to "SignUp", new_user_registration_path %></li>

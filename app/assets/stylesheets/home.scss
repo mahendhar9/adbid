@@ -12,7 +12,7 @@ body {
 
   p {
     color: #fff;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
     text-align: center;
     padding: 20px;
@@ -31,12 +31,13 @@ body {
   height: 50px;
   background-color: transparent;
   border-color: transparent;
-  z-index: 0;
+  z-index: 99;
 }
 
 .navbar-black {
   height: 50px;
   background-color: #444;
+  z-index: 0;
   }
 
 .nav > li > a:hover, .nav > li > a:focus {

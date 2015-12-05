@@ -1,0 +1,15 @@
+<div class="row margin-top-row">
+  <div class="container">
+    <% if @projects.any? %>
+    <% @projects.each do |project| %>
+    <div class="col-md-4">
+      <div class="project-box">
+        <%= image_tag(project.image_url, class: "user-image img-responsive") %>
+        <h3><%= project.title %></h3>
+        <p><%= project.short_description %></p>
+      </div>
+    </div>
+    <% end %>
+    <% end %>
+  </div>
+</div>
