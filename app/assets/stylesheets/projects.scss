@@ -1,9 +1,40 @@
-.user-image {
-  width: 300px;
-  height: 300px;
+.project-box {
+  padding: 12px 12px 25px 12px;
+  border: 1px solid #eee;
 }
 
-.project-box {
-  padding: 15px;
-  border: 1px solid #eee;
+.raised {
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.projects-row {
+  h3 {
+    display: inline;
+  }
+
+  .project-title-button {
+    margin: 7px 0 10px 0;
+  }
+
+  hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .donate-btn {
+    background-color: transparent;
+    color: #70c46f;
+    border: 2px solid #70c46f;
+    font-weight: bold;
+
+    &:hover {
+      background-color: #70c46f;
+      color: #fff;
+    }
+  }
+
+  .progress {
+    margin-bottom: 9px;
+  }
 }

@@ -17,6 +17,7 @@ group :development, :test do
   gem 'spring'
 end
 
+gem "font-awesome-rails"
 gem 'simple_form'
 gem 'devise'
 
