@@ -8,6 +8,7 @@
   <script src="https://js.braintreegateway.com/v2/braintree.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Raleway:500,600' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600|Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
@@ -26,6 +27,7 @@
   <%= yield %>
   <script>
     $(document).ready(function() {
+      new WOW().init();
       setTimeout(function() {
         $('#notice_wrapper').fadeOut("slow", function() {
           $this.remove();

@@ -25,6 +25,7 @@ class ProjectsController < ApplicationController
 
   def show
     @donation = current_user.donations.new
+    @backers = @project.donations.collect{|donation| donation.user }.uniq.count
   end
 
   def destroy
