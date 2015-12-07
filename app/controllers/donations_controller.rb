@@ -8,14 +8,14 @@ class DonationsController < ApplicationController
 
   def create
     if !(@project.amount_raised == @project.goal)
-      @donation = current_user.donations.new
+      @donation = current_user.donations.new(donation_params)
       @donation.project_id = @project.id
       @donation.amount = params[:donation][:amount]
       @project.amount_raised += @donation.amount
       @project.amount_needed = @project.goal - @project.amount_raised
       @project.save
       if @donation.save
-        flash[:notice] = "Thank you. You made a difference"
+        flash[:notice] = "Thank you for making a difference."
         redirect_to @project and return
       else
         flash[:alert] = "Sorry, there was a problem."
@@ -29,9 +29,13 @@ class DonationsController < ApplicationController
     @project = Project.find(params[:project_id])
   end
 
+  def donation_params
+    params.require(:donation).permit(:amount)
+  end
+
   def check_if_complete
     if @project.amount_raised == @project.goal
-      flash[:alert] = "Thank you, but this project has been already funded."
+      flash[:alert] = "Thank you, but this project has already been funded."
     end
   end
 

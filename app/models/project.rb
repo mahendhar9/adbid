@@ -1,6 +1,5 @@
 class Project < ActiveRecord::Base
   belongs_to :user
-  has_many :donations
+  has_many :donations, :dependent => :destroy
 
-  attr_accessor :still_needed
 end

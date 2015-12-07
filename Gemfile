@@ -22,4 +22,5 @@ gem 'simple_form'
 gem 'devise'
 gem 'braintree'
 gem 'wow-rails'
+gem 'bootstrap-wysihtml5-rails'
 
